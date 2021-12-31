@@ -1,6 +1,6 @@
 import React from 'react'
-import './equipment_page.css';
-const equipment_page = () => {
+import './equipment_page.css'
+const Equipment_Page = () => {
     return (
         <div>
             Equipment Page
@@ -8,4 +8,4 @@ const equipment_page = () => {
     )
 }
 
-export default equipment_page
+export default Equipment_Page
