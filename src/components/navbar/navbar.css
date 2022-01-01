@@ -1,1 +1,150 @@
-/* No CSS *//*# sourceMappingURL=navbar.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+.ms__navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 6rem;
+}
+
+.ms__navbar-links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ms__navbar-links_logo {
+  margin-right: 2rem;
+}
+
+.ms__navbar-links_logo img {
+  width: 150%;
+  height: auto;
+}
+
+.ms__navbar-links_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.ms__navbar-sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ms__navbar-sign button {
+  padding: 0.5rem 0.5rem;
+  color: #f6f7f7;
+  font-family: "Press Start 2P", cursive;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  width: 148px;
+  height: 50px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#c50100), color-stop(75%, #fb9c00));
+  background: linear-gradient(0deg, #c50100 0%, #fb9c00 75%);
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.ms__navbar-links_container p,
+.ms__navbar-sign p,
+.ms__navbar-menu_container p {
+  color: #fe9e00;
+  text-shadow: 3px 1px #705614;
+  font-family: "Press Start 2P", cursive;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.ms__navbar-menu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+
+.ms__navbar-menu svg {
+  cursor: pointer;
+}
+
+.ms__navbar-menu_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: end;
+  background: #323e4e;
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  min-width: 210px;
+  margin-top: 1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.ms__navbar-menu_container p {
+  margin: 1rem 0;
+}
+
+.ms__navbar-menu_container-links-sign {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .ms__navbar-links_container {
+    display: none;
+  }
+  .ms__navbar-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .ms__navbar-links_logo img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

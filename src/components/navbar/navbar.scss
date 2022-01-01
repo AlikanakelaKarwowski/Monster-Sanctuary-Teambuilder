@@ -1,0 +1,107 @@
+@import '../../variables';
+.ms__navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.ms__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ms__navbar-links_logo{
+    margin-right: 2rem;
+    img {
+        width: 150%;
+        height: auto;
+    }
+}
+.ms__navbar-links_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.ms__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    button {
+        padding: 0.5rem 0.5rem;
+        color: $color-text;
+        font-family: $font-families;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        width: 148px;
+        height: 50px;
+        background: $gradient-bar;
+        border-radius:5px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+    }
+}
+.ms__navbar-links_container p,
+.ms__navbar-sign p,
+.ms__navbar-menu_container p {
+    color: $color-subtext;
+    text-shadow: 3px 1px $color-subtext-shadow;
+    font-family: $font-families;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.ms__navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.ms__navbar-menu svg {
+    cursor: pointer;
+}
+
+.ms__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: end;
+    background: $color-bg;
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    min-width: 210px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+}
+
+.ms__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.ms__navbar-menu_container-links-sign{
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .ms__navbar-links_container {
+        display:none;
+    }
+    .ms__navbar-menu{
+        display: flex;
+    }
+    .ms__navbar-links_logo img{
+        width: 100%;
+    }
+}
