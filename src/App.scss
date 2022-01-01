@@ -1,25 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-$color-bg : #323e4e;
-$font-families: 'Press Start 2P', cursive;
-$gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
-$gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
-$color-footer: #031b34;
-$color-tile: #5c646f ;
-$color-text: #f6f7f7;
-$color-subtext: #d39720;
-$color-border: #42c39a;
+@import './variables';
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    font-family: $font-families;
 }
 
 body {
     background: $color-bg;
-    color: $color-text;
 }
 
 a{
