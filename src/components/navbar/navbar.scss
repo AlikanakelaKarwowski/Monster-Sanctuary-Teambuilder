@@ -15,7 +15,7 @@
 .ms__navbar-links_logo{
     margin-right: 2rem;
     img {
-        width: 150%;
+        max-width: 100%;
         height: auto;
     }
 }
@@ -92,6 +92,22 @@
 
 .ms__navbar-menu_container-links-sign{
     display: none;
+
+    button {
+        padding: 0.5rem 0.5rem;
+        color: $color-text;
+        font-family: $font-families;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        width: 148px;
+        height: 50px;
+        background: $gradient-bar;
+        border-radius:5px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 1050px) {
@@ -101,7 +117,51 @@
     .ms__navbar-menu{
         display: flex;
     }
-    .ms__navbar-links_logo img{
-        width: 100%;
+    .ms__navbar-menu_container-links-sign{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .ms__navbar {
+        padding:2rem 4rem;
+    }
+    .ms__navbar-sign {
+        p {
+            font-size: 18px;
+        }
+        button {
+            font-size: 12px;
+            line-height: 15px;
+            width: 100px;
+            height: 35px;
+        }
+    }
+    .ms__navbar-menu_container-links p{
+        font-size:18px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .ms__navbar {
+        padding:2rem;
+    }
+    .ms__navbar-sign{
+        display: none;
+    }
+    .ms__navbar-menu_container{
+        top:20px;
+    }
+    .ms__navbar-menu_container-links p{
+        font-size: 18px;
+    }
+    .ms__navbar-menu_container-links-sign{
+        display: block;
+        button {
+            font-size: 12px;
+            line-height: 15px;
+            width: 100px;
+            height: 35px;
+        }
     }
 }
