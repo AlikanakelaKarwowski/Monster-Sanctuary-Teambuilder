@@ -13,9 +13,6 @@ const Menu = () => (
 //BEM -> Block Element Modifier
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
-
-
-
     return (
         <div className="ms__navbar">
             <div className="ms__navbar-links">
