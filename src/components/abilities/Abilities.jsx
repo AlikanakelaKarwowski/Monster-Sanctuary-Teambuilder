@@ -3,7 +3,7 @@ import './abilities.css'
 const Abilities = () => {
     return (
         <div>
-            
+            Abilities
         </div>
     )
 }
