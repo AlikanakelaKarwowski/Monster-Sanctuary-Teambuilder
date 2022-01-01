@@ -1,3 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+$color-bg : #323e4e;
+$font-families: 'Press Start 2P', cursive;
+$gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+$gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+$color-footer: #031b34;
+$color-tile: #5c646f ;
+$color-text: #f6f7f7;
+$color-subtext: #d39720;
+$color-border: #42c39a;
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: $font-families;
+}
+
+body {
+    background: $color-bg;
+    color: $color-text;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+.gradient__text {
+    background: $gradient-text;
+    background-clip: text;
+}
+
+.section__padding {
+    padding: 4rem 6rem;
+}
+
+.section__margin {
+    margin: 4rem 6rem;
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 700px) {
+    .section__padding{
+        padding: 4rem;
+    }
+    .section__margin{
+        margin: 4rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .section__padding{
+        padding: 4rem 2rem;
+    }
+    .section__margin{
+        margin: 4rem 2rem;
+    }
 }
