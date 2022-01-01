@@ -75,15 +75,19 @@
     flex-direction: column;
 
     text-align: end;
-    background: $color-bg;
+    background: rgba(0,0,0,0.2);
     padding: 2rem;
     position: absolute;
     top: 40px;
     right: 0px;
-    min-width: 210px;
+    min-width: 175px;
     margin-top: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+    border-radius: 8px;
+    border-style: groove;
+    border-color: $color-border;
+    padding: 1rem;
+    
+    
 }
 
 .ms__navbar-menu_container p {
@@ -140,7 +144,25 @@
     .ms__navbar-menu_container-links p{
         font-size:18px;
     }
+        .ms__navbar-menu_container{
+        top:20px;
+    }
 }
+
+@media screen and (max-width: 650px){
+    .ms__navbar-sign {
+        p {
+            font-size: 14px;
+        }
+    }
+    .ms__navbar-menu_container-links p{
+        font-size:14px;
+    }
+        .ms__navbar-menu_container{
+        top:10px;
+    }
+}
+
 
 @media screen and (max-width: 550px){
     .ms__navbar {
