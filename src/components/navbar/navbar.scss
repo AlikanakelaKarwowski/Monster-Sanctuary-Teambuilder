@@ -18,10 +18,14 @@
         max-width: 100%;
         height: auto;
     }
+    @include blueborder;
 }
 .ms__navbar-links_container{
     display: flex;
     flex-direction: row;
+    a{
+        @include blueborder;
+    }
 }
 
 .ms__navbar-sign {
