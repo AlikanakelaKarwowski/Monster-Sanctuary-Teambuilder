@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-$color-bg : #323e4e;
+$color-bg : #334354;
 $font-families: 'Press Start 2P', cursive;
 $gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
 $gradient-bar: linear-gradient(0deg, rgba(197, 1, 0, 1) 0%,rgba(251, 156, 0, 1) 75%);
@@ -10,3 +10,8 @@ $color-text: #f6f7f7;
 $color-subtext: #fe9e00;
 $color-subtext-shadow: #705614;
 $color-border: #42c39a;
+@mixin blueborder{
+    border-image: url(https://vignette.wikia.nocookie.net/monster-sanctuary/images/2/25/BlueBorder.png) 11 14 stretch;
+    border-width: 14px;
+    border-style: solid;
+}
