@@ -29,10 +29,11 @@
 
 .ms__navbar-links_logo {
   margin-right: 2rem;
-  -o-border-image: url(https://vignette.wikia.nocookie.net/monster-sanctuary/images/2/25/BlueBorder.png) 11 14 stretch;
-     border-image: url(https://vignette.wikia.nocookie.net/monster-sanctuary/images/2/25/BlueBorder.png) 11 14 stretch;
-  border-width: 14px;
-  border-style: solid;
+  border: 10px solid;
+  border-image-source: url(https://vignette.wikia.nocookie.net/monster-sanctuary/images/2/25/BlueBorder.png);
+  border-image-slice: 30;
+  border-image-width: 50px;
+  border-image-repeat: stretch;
 }
 
 .ms__navbar-links_logo img {
@@ -50,11 +51,13 @@
           flex-direction: row;
 }
 
-.ms__navbar-links_container a {
-  -o-border-image: url(https://vignette.wikia.nocookie.net/monster-sanctuary/images/2/25/BlueBorder.png) 11 14 stretch;
-     border-image: url(https://vignette.wikia.nocookie.net/monster-sanctuary/images/2/25/BlueBorder.png) 11 14 stretch;
-  border-width: 14px;
-  border-style: solid;
+.ms__navbar-links_container p {
+  padding: 10px 5px;
+  border: 10px solid;
+  border-image-source: url(https://vignette.wikia.nocookie.net/monster-sanctuary/images/2/25/BlueBorder.png);
+  border-image-slice: 30;
+  border-image-width: 50px;
+  border-image-repeat: stretch;
 }
 
 .ms__navbar-sign {
@@ -84,6 +87,15 @@
   border: 0;
   outline: none;
   cursor: pointer;
+}
+
+.ms__navbar-sign p {
+  padding: 10px 5px;
+  border: 10px solid;
+  border-image-source: url(https://vignette.wikia.nocookie.net/monster-sanctuary/images/2/25/BlueBorder.png);
+  border-image-slice: 30;
+  border-image-width: 50px;
+  border-image-repeat: stretch;
 }
 
 .ms__navbar-links_container p,
@@ -125,17 +137,18 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: end;
-  background: rgba(0, 0, 0, 0.2);
-  padding: 2rem;
+  padding: 1rem;
   position: absolute;
   top: 40px;
   right: 0px;
   min-width: 175px;
   margin-top: 1rem;
   border-radius: 8px;
-  border-style: groove;
-  border-color: #42c39a;
-  padding: 1rem;
+  border: 10px solid;
+  border-image-source: url(https://vignette.wikia.nocookie.net/monster-sanctuary/images/2/25/BlueBorder.png);
+  border-image-slice: 30;
+  border-image-width: 50px;
+  border-image-repeat: stretch;
 }
 
 .ms__navbar-menu_container p {
@@ -161,6 +174,14 @@
   border: 0;
   outline: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1205px) {
+  .ms__navbar-links_container p,
+  .ms__navbar-sign p,
+  .ms__navbar-menu_container p {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -193,9 +214,6 @@
   .ms__navbar-menu_container-links p {
     font-size: 18px;
   }
-  .ms__navbar-menu_container {
-    top: 20px;
-  }
 }
 
 @media screen and (max-width: 650px) {
@@ -205,9 +223,6 @@
   .ms__navbar-menu_container-links p {
     font-size: 14px;
   }
-  .ms__navbar-menu_container {
-    top: 10px;
-  }
 }
 
 @media screen and (max-width: 550px) {
@@ -216,9 +231,6 @@
   }
   .ms__navbar-sign {
     display: none;
-  }
-  .ms__navbar-menu_container {
-    top: 20px;
   }
   .ms__navbar-menu_container-links p {
     font-size: 18px;
