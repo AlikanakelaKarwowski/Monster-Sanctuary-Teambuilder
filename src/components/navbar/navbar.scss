@@ -162,23 +162,15 @@
 }
 
 @media screen and (max-width: 650px){
-    .ms__navbar-sign {
-        p {
-            font-size: 14px;
-        }
-    }
-    .ms__navbar-menu_container-links p{
-        font-size:14px;
-    }
-}
-
-
-@media screen and (max-width: 550px){
+   
     .ms__navbar {
         padding:2rem;
     }
     .ms__navbar-sign{
         display: none;
+    }
+    .ms__navbar-menu_container{
+        top:50px;
     }
     .ms__navbar-menu_container-links p{
         font-size: 18px;
