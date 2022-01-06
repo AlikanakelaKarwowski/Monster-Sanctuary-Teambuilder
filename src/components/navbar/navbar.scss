@@ -23,8 +23,10 @@
 .ms__navbar-links_container{
     display: flex;
     flex-direction: row;
-    a{
+    p{
+        padding: 10px 5px;
         @include blueborder;
+
     }
 }
 
@@ -46,6 +48,11 @@
         border: 0;
         outline: none;
         cursor: pointer;
+
+    }
+    p{
+        padding: 10px 5px;
+        @include blueborder;
     }
 }
 .ms__navbar-links_container p,
@@ -79,17 +86,14 @@
     flex-direction: column;
 
     text-align: end;
-    background: rgba(0,0,0,0.2);
-    padding: 2rem;
+    padding: 1rem;
     position: absolute;
     top: 40px;
     right: 0px;
     min-width: 175px;
     margin-top: 1rem;
     border-radius: 8px;
-    border-style: groove;
-    border-color: $color-border;
-    padding: 1rem;
+    @include blueborder;
     
     
 }
@@ -117,7 +121,14 @@
         cursor: pointer;
     }
 }
-
+@media screen and (max-width:1205px) {
+    .ms__navbar-links_container p,
+    .ms__navbar-sign p,
+    .ms__navbar-menu_container p {
+        font-size:18px
+    }
+    
+}
 @media screen and (max-width: 1050px) {
     .ms__navbar-links_container {
         display:none;
@@ -148,9 +159,6 @@
     .ms__navbar-menu_container-links p{
         font-size:18px;
     }
-        .ms__navbar-menu_container{
-        top:20px;
-    }
 }
 
 @media screen and (max-width: 650px){
@@ -162,9 +170,6 @@
     .ms__navbar-menu_container-links p{
         font-size:14px;
     }
-        .ms__navbar-menu_container{
-        top:10px;
-    }
 }
 
 
@@ -174,9 +179,6 @@
     }
     .ms__navbar-sign{
         display: none;
-    }
-    .ms__navbar-menu_container{
-        top:20px;
     }
     .ms__navbar-menu_container-links p{
         font-size: 18px;
