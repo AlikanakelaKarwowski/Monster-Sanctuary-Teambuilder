@@ -11,7 +11,10 @@ $color-subtext: #fe9e00;
 $color-subtext-shadow: #705614;
 $color-border: #42c39a;
 @mixin blueborder{
-    border-image: url(https://vignette.wikia.nocookie.net/monster-sanctuary/images/2/25/BlueBorder.png) 11 14 stretch;
-    border-width: 14px;
-    border-style: solid;
+    border:10px solid;
+    border-image-source: url(https://vignette.wikia.nocookie.net/monster-sanctuary/images/2/25/BlueBorder.png);
+    border-image-slice: 30;
+    border-image-width: 50px;
+    border-image-repeat: stretch;
+
 }
