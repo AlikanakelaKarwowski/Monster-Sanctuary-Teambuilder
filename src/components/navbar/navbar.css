@@ -29,6 +29,10 @@
 
 .ms__navbar-links_logo {
   margin-right: 2rem;
+  -o-border-image: url(https://vignette.wikia.nocookie.net/monster-sanctuary/images/2/25/BlueBorder.png) 11 14 stretch;
+     border-image: url(https://vignette.wikia.nocookie.net/monster-sanctuary/images/2/25/BlueBorder.png) 11 14 stretch;
+  border-width: 14px;
+  border-style: solid;
 }
 
 .ms__navbar-links_logo img {
@@ -44,6 +48,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.ms__navbar-links_container a {
+  -o-border-image: url(https://vignette.wikia.nocookie.net/monster-sanctuary/images/2/25/BlueBorder.png) 11 14 stretch;
+     border-image: url(https://vignette.wikia.nocookie.net/monster-sanctuary/images/2/25/BlueBorder.png) 11 14 stretch;
+  border-width: 14px;
+  border-style: solid;
 }
 
 .ms__navbar-sign {
